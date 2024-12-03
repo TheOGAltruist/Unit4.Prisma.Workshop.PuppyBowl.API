@@ -30,6 +30,8 @@ This activity guides you through building a simple CRUD API using Prisma and Exp
    - PASSWORD is the password for your database user
 
 1. Add models to your `schema.prisma` file according to the database schema above.
+   - Remember in the original Puppy Bowl API that status is an `enum` of either **field** or **bench**
+   - Look at this [Prisma docs model](https://www.prisma.io/docs/orm/prisma-schema/data-model/models) for an example of `enum`
 1. Create and run the initial migration.\
    `npx prisma migrate dev --name init`
 1. Explore the created database. You should see an empty `Player` model:\
